@@ -121,11 +121,24 @@ section {
 
 .home-decor {
   text-align: center;
+  animation: slide-down 1s ease-out;
 }
 
 .resume-btn {
   padding: 10px;
   background-color: #0a88ab;
+  color: rgb(42, 51, 55);
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-btn {
+  padding: 10px;
+  background-color: #86099a;
   color: rgb(42, 51, 55);
   text-decoration: none;
   font-weight: 600;
@@ -320,4 +333,32 @@ tr:nth-child(even) {
 .rating label {
   font-size: 24px;
   cursor: pointer;
+}
+
+/* Animation - Keyframes*/
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  #home {
+    background-image: url("assets/images/rocket.png"),
+      url("assets/images/pro-bg.png");
+    background-size: 400px, 380px; /* Width = 200px, Height = 100px */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #home {
+    background-image: url("assets/images/rocket.png");
+    background-size: 380px; /* Width = 200px, Height = 100px */
+  }
 }
