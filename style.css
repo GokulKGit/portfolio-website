@@ -1,0 +1,323 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth; /* Smooth scroll */
+}
+
+/* body style */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Common */
+
+a {
+  text-decoration: none;
+}
+
+.name-decor {
+  font-size: 70px;
+}
+
+.heading-decor {
+  font-size: 50px;
+  color: #1768ac;
+  text-align: center;
+}
+
+.title-decor {
+  color: #010203;
+}
+
+.sub-title-decor {
+  font-size: 16px;
+  color: #999999;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.content-decor {
+  text-align: justify;
+  line-height: 30px;
+}
+
+table {
+  border-spacing: 20px;
+}
+
+th {
+  background-color: #03256c;
+  color: #ffffff;
+  box-shadow: 4px 4px 1px #e4e4e4;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: start;
+}
+
+input,
+textarea {
+  width: 500px;
+  padding: 10px 0px 10px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  text-align: center;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 18px;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+/* anchor tag style */
+.nav-btn {
+  color: rgb(42, 51, 55);
+  text-decoration: none;
+  padding-right: 18px;
+  font-weight: 600;
+  color: #03256c;
+}
+
+.nav-btn:hover {
+  transition: 300ms;
+  color: #1768ac;
+}
+
+/* Section Style */
+
+section {
+  height: 100vh;
+}
+
+/* home */
+#home {
+  align-content: center;
+  background: #ffffff;
+  background-image: url("assets/images/rocket.png"),
+    url("assets/images/pro-bg.png");
+  background-size: 500px, 400px; /* Width = 200px, Height = 100px */
+  background-repeat: no-repeat, no-repeat;
+  background-position: right center, 0px 50px;
+}
+
+.home-decor {
+  text-align: center;
+}
+
+.resume-btn {
+  padding: 10px;
+  background-color: #0a88ab;
+  color: rgb(42, 51, 55);
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.resume-btn:hover {
+  transition: 200ms;
+  box-shadow: 1px 1px 5px #b9b9b9;
+}
+
+/* About Me */
+#about {
+  align-content: center;
+}
+
+.about-decor {
+  display: flex;
+  margin-top: 70px;
+  align-content: center;
+  padding-left: 150px;
+}
+
+.about-content-decor {
+  align-content: center;
+}
+
+.border-container-decor {
+  border-left: 2px solid rgb(255, 191, 0);
+  padding-left: 30px;
+  padding-right: 150px;
+  margin-bottom: 40px;
+}
+
+.image-card-decor {
+  margin-right: 60px;
+}
+
+.name-card-decor {
+  /* background-image: linear-gradient(#0a88ab, #0a88ab); */
+  background-image: linear-gradient(to right, #03256c, #1768ac);
+  padding: 10px 10px 5px 5px;
+  text-align: center;
+  border-radius: 10px 3px 10px 3px;
+}
+
+.name-card-decor p {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.link-card-decor,
+.link-card-decor div {
+  display: flex;
+  margin-top: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-btn {
+  padding: 6px 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Profile */
+#profile {
+  align-content: center;
+  background-image: url("assets/images/idea.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: right top;
+}
+
+.profile-border-right-container-decor {
+  border-left: 4px solid rgb(12, 176, 174);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-left: 16px;
+}
+
+.profile-border-left-container-decor {
+  text-align: end;
+  border-right: 4px solid rgb(200, 173, 3);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-right: 16px;
+}
+
+.profile-border-left-container-decor p {
+  text-align: end;
+}
+
+/* Achievements */
+#achievement {
+  align-content: center;
+  text-align: center;
+}
+
+/* Interests */
+#interest {
+  align-content: center;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eaf0f4;
+}
+
+/* Google Calendar & Map */
+
+#calendar-map {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.google-decor {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 50px; /* Adds spacing between the two divs */
+}
+
+.calendar-decor {
+  border-radius: 20px;
+  text-align: center;
+}
+
+.gcal-decor {
+  margin: 10px;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.form-decor {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px fit-content;
+  text-align: left; /* Aligns text to the left */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0a88ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #125a8c;
+}
+
+/* Feedback */
+
+#feedback {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 24px;
+  cursor: pointer;
+}
